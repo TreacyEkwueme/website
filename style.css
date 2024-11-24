@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: purple;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: url('aboutus.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff5733;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .cta-btn:hover {
+  background: #c44125;
+}
+
+/* About Section */
+#about {
+  padding: 2rem;
+  text-align: center;
+}
+
+#about img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Services Section */
+#services {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.service {
+  flex: 1 1 45%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 500px;
+  margin: auto;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 0.5rem 1rem;
+  background: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: purple;
+  color: white;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+      flex-direction: column;
+  }
+}
